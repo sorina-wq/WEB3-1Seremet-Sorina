@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>PawShop — Magazin pentru animale</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <header>
+    <nav class="navbar">
+
+      <a href="#" class="logo">
+        🐾 Paw<span>Shop</span>
+      </a>
+
+      <div class="nav-links">
+        <a href="#produse">Produse</a>
+        <a href="#categorii">Categorii</a>
+        <a href="#despre">Despre noi</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <button class="cart-button" id="cart-button">
+        🛒 Coș
+        <span id="cart-count">0</span>
+      </button>
+
+    </nav>
+  </header>
+
+
+  <!-- HERO -->
+  <section class="hero">
+
+    <div class="hero-content">
+
+      <span class="badge">🐾 Totul pentru prietenul tău</span>
+
+      <h1>
+        Fericirea lor începe
+        <span>aici.</span>
+      </h1>
+
+      <p>
+        Hrană, jucării și accesorii de calitate
+        pentru animalele tale.
+      </p>
+
+      <a href="#produse" class="primary-button">
+        Vezi produsele →
+      </a>
+
+    </div>
+
+    <div class="hero-animal">
+      🐶
+    </div>
+
+  </section>
+
+
+  <!-- CATEGORII -->
+  <section id="categorii" class="section">
+
+    <div class="section-title">
+      <span>Cumpără după categorie</span>
+      <h2>Ce cauți?</h2>
+    </div>
+
+    <div class="categories">
+
+      <button class="category active" data-category="toate">
+        <strong>🐾</strong>
+        Toate
+      </button>
+
+      <button class="category" data-category="caini">
+        <strong>🐶</strong>
+        Câini
+      </button>
+
+      <button class="category" data-category="pisici">
+        <strong>🐱</strong>
+        Pisici
+      </button>
+
+      <button class="category" data-category="pasari">
+        <strong>🐦</strong>
+        Păsări
+      </button>
+
+      <button class="category" data-category="iepuri">
+        <strong>🐰</strong>
+        Animale mici
+      </button>
+
+    </div>
+
+  </section>
+
+
+  <!-- PRODUSE -->
+  <section id="produse" class="section products-section">
+
+    <div class="products-header">
+
+      <div class="section-title left">
+        <span>Produsele noastre</span>
+        <h2>Populare acum</h2>
+      </div>
+
+      <div class="search-box">
+        🔎
+        <input
+          type="text"
+          id="search"
+          placeholder="Caută un produs..."
+        >
+      </div>
+
+    </div>
+
+    <div class="products" id="products">
+
+      <!-- PRODUS 1 -->
+      <article
+        class="product"
+        data-category="caini"
+        data-name="Minge pentru câini"
+      >
+
+        <div class="product-image blue">
+          🥎
+          <span class="favorite">♡</span>
+        </div>
+
+        <div class="product-info">
+
+          <span class="product-category">Câini</span>
+
+          <h3>Minge pentru câini</h3>
+
+          <p>
+            Jucărie rezistentă pentru joacă.
+          </p>
+
+          <div class="product-bottom">
+            <strong>29,90 lei</strong>
+
+            <button
+              class="add-button"
+              data-name="Minge pentru câini"
+              data-price="29.90"
+            >
+              +
+            </button>
+          </div>
+
+        </div>
+
+      </article>
+
+
+      <!-- PRODUS 2 -->
+      <article
+        class="product"
+        data-category="pisici"
+        data-name="Jucărie pentru pisici"
+      >
+
+        <div class="product-image pink">
+          🧶
+          <span class="favorite">♡</span>
+        </div>
+
+        <div class="product-info">
+
+          <span class="product-category">Pisici</span>
+
+          <h3>Jucărie pentru pisici</h3>
+
+          <p>
+            Distracție garantată pentru pisica ta.
+          </p>
+
+          <div class="product-bottom">
+            <strong>19,90 lei</strong>
+
+            <button
+              class="add-button"
+              data-name="Jucărie pentru pisici"
+              data-price="19.90"
+            >
+              +
+            </button>
+          </div>
+
+        </div>
+
+      </article>
+
+
+      <!-- PRODUS 3 -->
+      <article
+        class="product"
+        data-category="caini"
+        data-name="Hrană premium câini"
+      >
+
+        <div class="product-image orange">
+          🥩
+          <span class="favorite">♡</span>
+        </div>
+
+        <div class="product-info">
+
+          <span class="product-category">Câini</span>
+
+          <h3>Hrană premium</h3>
+
+          <p>
+            Hrană gustoasă și echilibrată.
+          </p>
+
+          <div class="product-bottom">
+            <strong>89,90 lei</strong>
+
+            <button
+              class="add-button"
+              data-name="Hrană premium"
+              data-price="89.90"
+            >
+              +
+            </button>
+          </div>
+
+        </div>
+
+      </article>
+
+
+      <!-- PRODUS 4 -->
+      <article
+        class="product"
+        data-category="pasari"
+        data-name="Mix semințe păsări"
+      >
+
+        <div class="product-image green">
+          🌻
+          <span class="favorite">♡</span>
+        </div>
+
+        <div class="product-info">
+
+          <span class="product-category">Păsări</span>
+
+          <h3>Mix semințe</h3>
+
+          <p>
+            Semințe nutritive pentru păsări.
+          </p>
+
+          <div class="product-bottom">
+            <strong>24,90 lei</strong>
+
+            <button
+              class="add-button"
+              data-name="Mix semințe"
+              data-price="24.90"
+            >
+              +
+            </button>
+          </div>
+
+        </div>
+
+      </article>
+
+
+      <!-- PRODUS 5 -->
+      <article
+        class="product"
+        data-category="iepuri"
+        data-name="Hrană pentru iepuri"
+      >
+
+        <div class="product-image yellow">
+          🥕
+          <span class="favorite">♡</span>
+        </div>
+
+        <div class="product-info">
+
+          <span class="product-category">Animale mici</span>
+
+          <h3>Hrană pentru iepuri</h3>
+
+          <p>
+            Alimentație sănătoasă pentru iepuri.
+          </p>
+
+          <div class="product-bottom">
+            <strong>34,90 lei</strong>
+
+            <button
+              class="add-button"
+              data-name="Hrană pentru iepuri"
+              data-price="34.90"
+            >
+              +
+            </button>
+          </div>
+
+        </div>
+
+      </article>
+
+
+      <!-- PRODUS 6 -->
+      <article
+        class="product"
+        data-category="pisici"
+        data-name="Pat pentru pisici"
+      >
+
+        <div class="product-image purple">
+          🛏️
+          <span class="favorite">♡</span>
+        </div>
+
+        <div class="product-info">
+
+          <span class="product-category">Pisici</span>
+
+          <h3>Pat confortabil</h3>
+
+          <p>
+            Un loc moale pentru odihna pisicii.
+          </p>
+
+          <div class="product-bottom">
+            <strong>119,90 lei</strong>
+
+            <button
+              class="add-button"
+              data-name="Pat confortabil"
+              data-price="119.90"
+            >
+              +
+            </button>
+          </div>
+
+        </div>
+
+      </article>
+
+    </div>
+
+  </section>
+
+
+  <!-- DESPRE -->
+  <section id="despre" class="about">
+
+    <div class="about-icon">
+      🐾
+    </div>
+
+    <div>
+      <span>De ce PawShop?</span>
+
+      <h2>
+        Pentru că animalele
+        merită tot ce e mai bun.
+      </h2>
+
+      <p>
+        Alegem produse utile, sigure și de calitate
+        pentru ca prietenii tăi necuvântători să fie
+        fericiți și sănătoși.
+      </p>
+    </div>
+
+  </section>
+
+
+  <!-- CONTACT -->
+  <section id="contact" class="contact section">
+
+    <div class="section-title">
+      <span>Ai întrebări?</span>
+      <h2>Contactează-ne</h2>
+    </div>
+
+    <form id="contact-form">
+
+      <input
+        type="text"
+        id="name"
+        placeholder="Numele tău"
+        required
+      >
+
+      <input
+        type="email"
+        id="email"
+        placeholder="Email"
+        required
+      >
+
+      <textarea
+        id="message"
+        placeholder="Mesajul tău..."
+        required
+      ></textarea>
+
+      <button type="submit" class="primary-button">
+        Trimite mesajul
+      </button>
+
+      <p id="form-message"></p>
+
+    </form>
+
+  </section>
+
+
+  <!-- FOOTER -->
+  <footer>
+
+    <div class="logo">
+      🐾 Paw<span>Shop</span>
+    </div>
+
+    <p>
+      Magazinul prietenilor necuvântători ❤️
+    </p>
+
+    <small>
+      © 2026 PawShop. Toate drepturile rezervate.
+    </small>
+
+  </footer>
+
+
+  <!-- COS -->
+  <div class="cart-overlay" id="cart-overlay">
+
+    <div class="cart">
+
+      <div class="cart-header">
+        <h2>Coșul tău 🛒</h2>
+
+        <button id="close-cart">
+          ×
+        </button>
+      </div>
+
+      <div id="cart-items">
+        <p class="empty-cart">
+          Coșul este gol.
+        </p>
+      </div>
+
+      <div class="cart-footer">
+
+        <div>
+          <span>Total</span>
+          <strong id="cart-total">0,00 lei</strong>
+        </div>
+
+        <button class="primary-button" id="checkout">
+          Finalizează comanda
+        </button>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <script src="script.js"></script>
+
+</body>
+</html>
